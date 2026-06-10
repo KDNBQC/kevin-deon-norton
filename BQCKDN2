@@ -1,0 +1,38 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Kevin Deon Norton | Author & Management Expert</title>  
+    <style>  
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; }  
+        header { background: #2c3e50; color: #fff; padding: 2rem; text-align: center; border-radius: 8px; margin-bottom: 20px; }  
+        h1 { margin: 0; font-size: 2.5rem; }  
+        .content { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }  
+        .book-section { display: flex; align-items: center; gap: 20px; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px; }  
+        .cta-button { display: inline-block; background: #e67e22; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 10px; }  
+        .cta-button:hover { background: #d35400; }  
+    </style>  
+</head>  
+<body>
+
+    <header>  
+        <h1>Kevin Deon Norton</h1>  
+        <p>Author of <em>Unfamiliar Threshold</em> | Management Consultant</p>  
+    </header>
+
+    <div class="content">  
+        <h2>Stop Firefighting. Start Building.</h2>  
+        <p>I help middle management teams move from the chaos of daily "firefighting" to the strategic precision of an "Architect." With over 20 years of experience in business efficiency and leadership development, I provide the tools to build a workforce that strives for perfection.</p>  
+          
+        <div class="book-section">  
+            <div>  
+                <h3>Unfamiliar Threshold</h3>  
+                <p>The management philosophy that changes everything. Learn how to navigate the thresholds of leadership and increase productivity across your entire organization.</p>  
+                <a href="#" class="cta-button">Order the Book</a>  
+            </div>  
+        </div>  
+    </div>
+
+</body>  
+</html>  
