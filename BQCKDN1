@@ -1,0 +1,113 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Kevin Deon Norton | Leadership Architect</title>  
+<style>  
+    :root {  
+        --primary-blue: #0a2540;  
+        --accent-gold: #c5a059;  
+        --text-gray: #333333;  
+        --bg-light: #f4f7f9;  
+    }
+
+    body {  
+        font-family: 'Helvetica Neue', Arial, sans-serif;  
+        line-height: 1.6;  
+        color: var(--text-gray);  
+        margin: 0;  
+        padding: 0;  
+        background: #fff;  
+    }
+
+    header {  
+        background: var(--primary-blue);  
+        color: #fff;  
+        padding: 3rem 5%;  
+        text-align: center;  
+    }
+
+    h1 { margin: 0; font-size: 2.8rem; letter-spacing: 2px; }  
+    .subtitle { color: var(--accent-gold); text-transform: uppercase; letter-spacing: 3px; font-size: 1rem; }
+
+    .container { max-width: 900px; margin: auto; padding: 4rem 5%; }
+
+    /* TEACHINGS SECTION */  
+    .teachings { margin-bottom: 4rem; }  
+    h2 { color: var(--primary-blue); border-bottom: 3px solid var(--accent-gold); display: inline-block; padding-bottom: 5px; }  
+      
+    .card { background: var(--bg-light); padding: 2rem; border-radius: 5px; margin-bottom: 1.5rem; border-left: 5px solid var(--primary-blue); }  
+    .card h3 { margin-top: 0; color: var(--primary-blue); }
+
+    .quote { font-style: italic; font-weight: bold; color: #b22222; margin: 20px 0; display: block; font-size: 1.2rem; }
+
+    /* BQC SECTION */  
+    .bqc-section { background: #0a2540; color: #fff; padding: 3rem; border-radius: 8px; margin-bottom: 4rem; }  
+    .bqc-section h2 { color: #fff; border-color: var(--accent-gold); }
+
+    /* BOOK SECTION */  
+    .book-section { text-align: center; padding: 2rem; border: 2px solid #eee; }  
+    .btn { background: var(--accent-gold); color: #fff; padding: 15px 30px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 20px; }
+
+    footer { text-align: center; padding: 3rem; font-size: 0.8rem; color: #999; }  
+</style>  
+</head>  
+<body>
+
+<header>  
+    <h1>KEVIN DEON NORTON</h1>  
+    <div class="subtitle">Architect of High-Impact Leadership</div>  
+</header>
+
+<div class="container">
+
+    <!-- PRIMARY: THE TEACHINGS -->  
+    <section class="teachings">  
+        <h2>Core Philosophy: Prevention = Profit</h2>  
+        <p>Kevin Deon Norton is the expert in the "Math of Inaction." He teaches owners and managers how to stop subsidizing the management gaps that kill company productivity.</p>
+
+        <div class="card">  
+            <h3>Internal Blindness</h3>  
+            <p>Most business owners are blind to the "bleed" in their operations. Kevin teaches how to identify the hidden rework, missed deadlines, and friction that owners have mistakenly accepted as the "cost of doing business."</p>  
+        </div>
+
+        <span class="quote">"Fast actions without data are BAD BAD BAD."</span>
+
+        <div class="card">  
+            <h3>The Babysitting Tax</h3>  
+            <p>Kevin identifies the "Babysitting Tax"—the premium you pay to have a manager do the work of their subordinates because they don't know how to lead. He transforms these "Firefighters" into structural "Architects."</p>  
+        </div>  
+          
+        <div class="card">  
+            <h3>Human-Centered Communication</h3>  
+            <p>Mastering the "Feedback Loop" to ensure instructions are not just heard, but understood and acted upon with precision.</p>  
+        </div>  
+    </section>
+
+    <!-- SECONDARY: BQC -->  
+    <section class="bqc-section">  
+        <h2>Brubaker Quality Control</h2>  
+        <p>The practical application of Kevin’s 30 years of expertise. BQC focuses on 40% to 50% productivity increases for businesses with middle management.</p>  
+        <ul>  
+            <li><strong>Elite Leadership Development:</strong> Converting "doers" into high-impact leaders.</li>  
+            <li><strong>Staff Assessments:</strong> The "preventative maintenance" of a healthy organization.</li>  
+            <li><strong>Management Coaching:</strong> Moving away from "gut feelings" toward data-driven ROI.</li>  
+        </ul>  
+    </section>
+
+    <!-- TERTIARY: THE BOOK -->  
+    <section class="book-section">  
+        <h2>Unfamiliar Threshold</h2>  
+        <p>The Leadership Framework Manual. A blunt, direct roadmap for crossing the threshold from chaos to elite performance.</p>  
+        <a href="https://brubakerqualitycontrol.com/" class="btn">Learn More at BrubakerQualityControl.com</a>  
+    </section>
+
+</div>
+
+<footer>  
+    &copy; 2026 Kevin Deon Norton | Brubaker Quality Control  
+</footer>
+
+</body>  
+</html>  
