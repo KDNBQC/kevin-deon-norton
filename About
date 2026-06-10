@@ -3,113 +3,118 @@
 <head>  
 <meta charset="UTF-8">  
 <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-<title>The Official Definitive Bio | Kevin Deon Norton</title>  
+<title>About Kevin Deon Norton | The Full Story</title>  
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">  
 <style>  
-    :root {  
-        --bg-color: #0a0a0a;  
-        --text-color: #e0e0e0;  
-        --accent-color: #c5a059; /* Elegant Gold */  
-        --secondary-text: #a0a0a0;  
-    }  
-    body {  
-        background-color: var(--bg-color);  
-        color: var(--text-color);  
-        font-family: 'Georgia', serif;  
-        line-height: 1.8;  
-        margin: 0;  
-        padding: 0;  
-        display: flex;  
-        justify-content: center;  
-    }  
-    .container {  
-        max-width: 850px;  
-        padding: 60px 20px;  
-    }  
-    h1, h2, h3 {  
-        font-family: 'Helvetica Neue', Arial, sans-serif;  
-        text-transform: uppercase;  
-        letter-spacing: 2px;  
-        color: var(--accent-color);  
-        margin-top: 40px;  
-    }  
-    h1 { font-size: 2.8rem; margin-bottom: 10px; text-align: center; }  
-    .subtitle {   
-        text-align: center;   
-        font-style: italic;   
-        color: var(--secondary-text);   
-        margin-bottom: 40px;  
-        font-size: 1.2rem;  
-    }  
-    .hero-img {  
-        width: 100%;  
-        height: auto;  
-        border-radius: 4px;  
-        margin-bottom: 40px;  
-        box-shadow: 0 10px 30px rgba(0,0,0,0.8);  
-    }  
-    p { margin-bottom: 25px; font-size: 1.15rem; }  
-    .section-divider {  
-        border: 0;  
-        height: 1px;  
-        background: linear-gradient(to right, transparent, var(--accent-color), transparent);  
-        margin: 60px 0;  
-    }  
-    .contact-box {  
-        background: #151515;  
-        padding: 40px;  
-        border: 1px solid #333;  
-        border-left: 5px solid var(--accent-color);  
-        margin-top: 60px;  
-    }  
-    .contact-box h3 { margin-top: 0; color: #fff; }  
-    a { color: var(--accent-color); text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s; }  
-    a:hover { border-bottom: 1px solid var(--accent-color); }  
-    .footer { text-align: center; font-size: 0.9rem; color: var(--secondary-text); margin-top: 80px; padding-bottom: 40px; }  
-    strong { color: #fff; }  
+:root {  
+    --bg: #0a0a0a;  
+    --text: #ffffff;  
+    --accent: #d4af37;  
+    --gray: #888;  
+}  
+body {  
+    background-color: var(--bg);  
+    color: var(--text);  
+    font-family: 'Inter', sans-serif;  
+    line-height: 1.8;  
+    margin: 0;  
+    padding: 0;  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+}  
+header {  
+    text-align: left;  
+    padding: 100px 20px 40px 20px;  
+    max-width: 800px;  
+    width: 100%;  
+}  
+.back-link {  
+    color: var(--accent);  
+    text-decoration: none;  
+    text-transform: uppercase;  
+    font-size: 0.8rem;  
+    letter-spacing: 2px;  
+    margin-bottom: 40px;  
+    display: block;  
+}  
+h1 {  
+    font-size: 3rem;  
+    letter-spacing: -1px;  
+    margin-bottom: 10px;  
+    text-transform: uppercase;  
+    font-weight: 700;  
+}  
+.content-section {  
+    max-width: 800px;  
+    padding: 0 20px 100px 20px;  
+}  
+h2 {  
+    font-size: 1.8rem;  
+    margin-top: 60px;  
+    margin-bottom: 20px;  
+    color: var(--accent);  
+    text-transform: uppercase;  
+    letter-spacing: 1px;  
+    border-bottom: 1px solid #222;  
+    padding-bottom: 10px;  
+}  
+h3 {  
+    font-size: 1.3rem;  
+    color: var(--text);  
+    margin-top: 40px;  
+}  
+p {  
+    font-size: 1.1rem;  
+    color: #ccc;  
+    margin-bottom: 25px;  
+}  
+.highlight {  
+    color: var(--text);  
+    font-weight: 700;  
+}  
+footer {  
+    padding: 60px;  
+    color: var(--gray);  
+    font-size: 0.8rem;  
+    text-transform: uppercase;  
+    text-align: center;  
+}  
 </style>  
 </head>  
-<body>  
-<div class="container">  
-    <h1>Kevin Deon Norton</h1>  
-    <div class="subtitle">American Entrepreneur • Filmmaker • HR Architect • Musician</div>  
+<body>
+
+<header>  
+    <a href="index.html" class="back-link">← Back to Home</a>  
+    <h1>The Full Story</h1>  
+</header>
+
+<div class="content-section">  
+    <p>To understand Kevin Deon Norton is to understand the rare intersection where high-stakes corporate strategy, cinematic discipline, and the raw soul of the blues collide. He is an American entrepreneur, entertainer, motivational speaker, and management consultant who has spent decades dismantling the status quo.</p>
+
+    <h2>The Architect of Corporate Performance</h2>  
+    <p>As the Primary Owner of <strong>Brubaker Quality Control (BQC)</strong>, Kevin has become the premier fixer for companies struggling with the "Babysitting Tax." His client roster includes industry giants like <span class="highlight">Costco, 3M Corp, and Circuit City</span>. With a history of serving over 100 companies, he has proven that the profit increase resulting from his Leadership Development Program far outweighs the cost of the service.</p>  
       
-    <img src="https://cdn.marblism.com/8riXzq0QS6u.webp" alt="Kevin Deon Norton" class="hero-img">
+    <p>His business credibility is grounded in real-world ownership and technical execution. From owning Toolbox Inc to working in eco-friendly horse logging and custom home building, Kevin understands labor, systems, and what happens when one weak link throws the whole job sideways. He speaks the language of both the floor worker and the C-suite.</p>
 
-    <p>To understand Kevin Deon Norton is to understand the rare intersection where high-stakes corporate strategy, cinematic discipline, and the raw soul of the blues collide. He is not a specialist in the traditional, limiting sense of the word; he is a multi-hyphenate architect of human behavior.</p>  
+    <h2>The Cinematic Craftsman</h2>  
+    <p>Known in the entertainment world as <strong>Kevin Deon</strong>, he is an award-winning filmmaker and actor. His foundation is built on the rigorous Stanislavski and Meisner methods, having studied under legends like Irene Gilbert and Nina Foch. This training in human psychology is what makes his management consulting so effective—he understands why people do what they do before they realize it themselves.</p>  
       
-    <p>As an American entrepreneur, entertainer, motivational speaker, and management consultant, Kevin Deon Norton has spent decades dismantling the status quo in industries that often prefer the comfort of mediocrity. Whether he is diagnosing a multi-million dollar productivity leak in a corporate boardroom or directing a high-tension scene on a film set, the core objective remains the same: the pursuit of perfection through the lens of human-centered management.</p>
+    <p>His contribution to the Nevada film industry is historical. He founded the <span class="highlight">Las Vegas Film and Television Artists (LVFTA)</span>, growing it to over 800 members. His professional pedigree includes work as a Casting Director for MGM on <strong>The Hangover</strong> and <strong>Now You See Me</strong>, and he even wrote comedy episodes for Miramax.</p>
 
-    <hr class="section-divider">
+    <h2>The Musical Nomad</h2>  
+    <p>Performing as <strong>Tulsa Flood</strong>, he fronted the band Rhythm Affair. His musical journey was shaped by a high-stakes three-year mentorship as the personal assistant to the late <strong>Joe Jackson</strong>. Working alongside the patriarch of the Jackson dynasty provided an unparalleled look into the mechanics of global excellence. His time in the industry also saw him working in the orbit of legendary personalities like <strong>Prince</strong> and <strong>Charo</strong>.</p>
 
-    <h3>The Architect of Corporate Performance</h3>  
-    <p>As the Primary Owner and HR Management Consultant at <strong>Brubaker Quality Control (BQC)</strong>, Kevin Deon Norton has become the premier fixer for companies struggling with the "Babysitting Tax." His client roster includes giants like <strong>Costco, 3M Corp, and Circuit City</strong>, backed by a history of serving over 100 companies.</p>  
-      
-    <p>What gives him that range is not theory. It is a lifetime of seeing operations from the inside, under pressure. He is a <strong>U.S. Army Veteran</strong> who served as an E-4 Specialist and was decorated with the <strong>U. Army Commendation Medal</strong>. He also served as a former <strong>Milwaukee Police Officer</strong>. This background shaped the discipline, accountability, and pattern recognition that now define what he calls a <strong>Director’s Eye</strong> for business.</p>
+    <h2>The Written Word & Media</h2>  
+    <p>Kevin’s influence extends into journalism as the owner of the <strong>Henderson Press Newspaper</strong>. As a media mogul, he understands the power of narrative and the weight of the written word, using his platforms to challenge conventional thinking and spotlight the reality of the modern business landscape.</p>
 
-    <p>His business credibility is equally grounded in real-world ownership, from owning <strong>Toolbox Inc</strong> and <strong>Handyman in Henderson</strong> to eco-friendly <strong>Circle Z Draft Horse Logging</strong>. He understands labor, systems, and what happens when one weak link throws the whole job sideways. He is the intervention for leaders ready to face the "Uncomfortable Truth" of their operational failures.</p>
+    <h2>The Director’s Eye</h2>  
+    <p>Ultimately, Kevin Deon Norton does not see a difference between the rhythm of a song and the rhythm of a production line. Both are expressions of human behavior. He is the only solution for leaders who are tired of the "Convenient lie" and ready to face the "Uncomfortable truth" of their operational failures.</p>  
+</div>
 
-    <h3>The Media Authority and the Written Word</h3>  
-    <p>Kevin’s influence extends into journalism as the owner of the <strong>Henderson Press Newspaper</strong> in Henderson, Nevada. A prolific writer, his insights have been featured in the <em>Las Vegas Sun</em> and several prominent online magazines. He doesn't just report on the world; he analyzes the systems that drive it, using his platforms to challenge conventional thinking and spotlight the reality of the modern business landscape.</p>
+<footer>  
+    &copy; 2026 Kevin Deon Norton | Brubaker Quality Control  
+</footer>
 
-    <h3>The Cinematic Craftsman: From Method to Direction</h3>  
-    <p>In the entertainment world, he is known as <strong>Kevin Deon</strong>, an award-winning filmmaker and director trained in the Stanislavski and Meisner methods. He is the founder of the <strong>Las Vegas Film and Television Artists (LVFTA)</strong>, which grew to over 800 members as a landmark institution for entertainers.</p>  
-      
-    <p>His professional pedigree includes work as a <strong>Casting Director for MGM</strong> on <em>The Hangover</em>, <em>Now You See Me</em>, and <em>Hangover 3</em>. He also directed the <em>Zika Project</em> reality show under Joe Jackson and wrote episodes for Miramax. His film <em>Large Coffee Black</em> and the project <em>36.95 Degrees</em> stand as testaments to his ability to read human behavior accurately under pressure.</p>
-
-    <h3>The Musical Nomad and the Jackson Mentorship</h3>  
-    <p>Performing as <strong>Tulsa Flood</strong>, Kevin is the frontman for the band <strong>Rhythm Affair</strong>. His musical career is defined by a deep, resonant narrative style, exemplified in the song "The 37," a haunting tribute to the 1962 Robena Mine disaster.</p>
-
-    <p>His journey was shaped by a three-year mentorship as the personal assistant to the late <strong>Joe Jackson</strong>. Working alongside the patriarch of the Jackson dynasty provided him an unparalleled look into the mechanics of global entertainment. His time in the industry also saw him working with legends like <strong>Charo and Prince</strong>, refining his understanding of talent, ego, and high-stakes performance.</p>
-
-    <div class="contact-box">  
-        <h3>The Intervention</h3>  
-        <p>The chaos won’t fix itself. The status quo is costing you more every day than the solution ever will. To engage Kevin Deon Norton for Leadership Development, Staff Assessments, or Management Coaching, contact him directly.</p>  
-        <p><strong>Official Site:</strong> <a href="https://brubakerqualitycontrol.com/">Brubaker Quality Control</a></p>  
-    </div>
-
-    <div class="footer">  
-        &copy; 2026 Brubaker Quality Control. All Rights Reserved.  
-    </div>  
-</div>  
 </body>  
 </html>  
