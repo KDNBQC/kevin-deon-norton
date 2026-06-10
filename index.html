@@ -1,103 +1,128 @@
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>The Official Definitive Bio | Kevin Deon Norton</title>  
-    <style>  
-        :root {  
-            --bg-color: #0a0a0a;  
-            --text-color: #e0e0e0;  
-            --accent-color: #c5a059; /* Elegant Gold */  
-            --secondary-text: #a0a0a0;  
-        }  
-        body {  
-            background-color: var(--bg-color);  
-            color: var(--text-color);  
-            font-family: 'Georgia', serif;  
-            line-height: 1.8;  
-            margin: 0;  
-            padding: 0;  
-            display: flex;  
-            justify-content: center;  
-        }  
-        .container {  
-            max-width: 800px;  
-            padding: 60px 20px;  
-        }  
-        h1, h2, h3 {  
-            font-family: 'Helvetica Neue', Arial, sans-serif;  
-            text-transform: uppercase;  
-            letter-spacing: 2px;  
-            color: var(--accent-color);  
-        }  
-        h1 { font-size: 2.5rem; margin-bottom: 10px; text-align: center; }  
-        .subtitle {   
-            text-align: center;   
-            font-style: italic;   
-            color: var(--secondary-text);   
-            margin-bottom: 40px;  
-            font-size: 1.1rem;  
-        }  
-        .hero-img {  
-            width: 100%;  
-            height: auto;  
-            border-radius: 4px;  
-            margin-bottom: 40px;  
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);  
-        }  
-        p { margin-bottom: 25px; font-size: 1.15rem; }  
-        .section-divider {  
-            border: 0;  
-            height: 1px;  
-            background: linear-gradient(to right, transparent, var(--accent-color), transparent);  
-            margin: 50px 0;  
-        }  
-        .contact-box {  
-            background: #1a1a1a;  
-            padding: 30px;  
-            border-left: 4px solid var(--accent-color);  
-            margin-top: 50px;  
-        }  
-        .contact-box h3 { margin-top: 0; }  
-        a { color: var(--accent-color); text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s; }  
-        a:hover { border-bottom: 1px solid var(--accent-color); }  
-        .footer { text-align: center; font-size: 0.9rem; color: var(--secondary-text); margin-top: 60px; }  
-    </style>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Kevin Deon Norton | The Director's Eye</title>  
+<style>  
+    :root {  
+        --bg-color: #0d0d0d;  
+        --text-color: #f2f2f2;  
+        --accent: #c5a059;  
+    }  
+    body {  
+        background-color: var(--bg-color);  
+        color: var(--text-color);  
+        font-family: 'Helvetica Neue', Arial, sans-serif;  
+        margin: 0;  
+        display: flex;  
+        flex-direction: column;  
+        align-items: center;  
+        text-align: center;  
+    }  
+    .hero {  
+        padding: 80px 20px;  
+        max-width: 900px;  
+    }  
+    h1 { font-size: 3rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 10px; color: #fff; }  
+    .tagline { font-style: italic; color: var(--accent); font-size: 1.4rem; margin-bottom: 50px; }  
+      
+    .grid {  
+        display: grid;  
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));  
+        gap: 30px;  
+        width: 100%;  
+        max-width: 1100px;  
+        padding: 20px;  
+    }  
+    .card {  
+        background: #1a1a1a;  
+        padding: 40px 20px;  
+        border-radius: 8px;  
+        transition: 0.3s;  
+        border: 1px solid #333;  
+    }  
+    .card:hover { border-color: var(--accent); transform: translateY(-5px); }  
+    .card h2 { color: var(--accent); font-size: 1.5rem; margin-top: 0; }  
+    .card p { color: #ccc; line-height: 1.6; }  
+      
+    .btn {  
+        display: inline-block;  
+        margin-top: 20px;  
+        color: var(--accent);  
+        text-decoration: none;  
+        font-weight: bold;  
+        border: 1px solid var(--accent);  
+        padding: 8px 15px;  
+        border-radius: 4px;  
+        transition: 0.3s;  
+    }  
+    .btn:hover { background: var(--accent); color: #000; }
+
+    .bio-section {  
+        margin-top: 80px;  
+        padding: 60px 20px;  
+        border-top: 1px solid #333;  
+        width: 100%;  
+        background: #050505;  
+    }  
+    .main-btn {  
+        display: inline-block;  
+        color: #000;  
+        background: var(--accent);  
+        text-decoration: none;  
+        font-size: 1.2rem;  
+        font-weight: bold;  
+        padding: 18px 40px;  
+        text-transform: uppercase;  
+        letter-spacing: 2px;  
+        border-radius: 2px;  
+        transition: 0.4s;  
+    }  
+    .main-btn:hover { background: #fff; transform: scale(1.05); }  
+      
+    footer { padding: 40px; color: #555; font-size: 0.8rem; }  
+</style>  
 </head>  
-<body>  
-    <div class="container">  
-        <h1>Kevin Deon Norton</h1>  
-        <div class="subtitle">Entrepreneur • Filmmaker • HR Architect • Musician</div>  
-          
-        <img src="https://cdn.marblism.com/8riXzq0QS6u.webp" alt="Kevin Deon Norton Workspace" class="hero-img">
+<body>
 
-        <p>To understand Kevin Deon Norton is to understand the rare intersection where high-stakes corporate strategy, cinematic discipline, and the raw soul of the blues collide. He is not a specialist in the traditional, limiting sense of the word; he is a multi-hyphenate architect of human behavior.</p>  
-          
-        <p>As an American entrepreneur, entertainer, motivational speaker, and management consultant, Kevin Deon Norton has spent decades dismantling the status quo in industries that often prefer the comfort of mediocrity. Whether he is diagnosing a multi-million dollar productivity leak in a corporate boardroom or directing a high-tension scene on a film set, the core objective remains the same: the pursuit of perfection through the lens of human-centered management.</p>
+<section class="hero">  
+    <h1>Kevin Deon Norton</h1>  
+    <div class="tagline">"The Director's Eye for the Boardroom."</div>  
+    <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto; color: #aaa;">  
+        Renaissance Man. American Entrepreneur. Filmmaker. HR Architect.  
+    </p>  
+</section>
 
-        <hr class="section-divider">
+<div class="grid">  
+    <div class="card">  
+        <h2>Kevin Deon</h2>  
+        <p>The Screen. Award-winning filmmaker, director, and MGM casting authority.</p>  
+        <a href="https://www.imdb.com/name/nm2682977/" class="btn">View IMDb Profile →</a>  
+    </div>
 
-        <h3>The Architect of Corporate Performance</h3>  
-        <p>As the Primary Owner and HR Management Consultant at <strong>Brubaker Quality Control (BQC)</strong>, Kevin Deon Norton has become the premier fixer for companies struggling with the "Babysitting Tax." His client roster includes giants like Costco, 3M Corp, and Circuit City, backed by a history of serving over 100 companies.</p>  
-          
-        <p>His "Director’s Eye" for business is forged from a background as a U.S. Army Veteran (awarded the Commendation Medal) and a former Milwaukee Police Officer. He sees what others miss: the internal blindness and organizational rot that bleed profits.</p>
+    <div class="card">  
+        <h2>Brubaker QC</h2>  
+        <p>The Boardroom. Eliminating the "Babysitting Tax" through Leadership Development.</p>  
+        <a href="https://brubakerqualitycontrol.com/" class="btn">Visit Corporate Site →</a>  
+    </div>
 
-        <h3>The Cinematic Craftsman</h3>  
-        <p>In the entertainment world, he is known as <strong>Kevin Deon</strong>, an award-winning filmmaker and director trained in the Stanislavski and Meisner methods. As the founder of the Las Vegas Film and Television Artists (LVFTA), he has mentored hundreds, while his own credits include casting for major hits like <em>The Hangover</em> and <em>Now You See Me</em>.</p>
-
-        <h3>The Musical Nomad</h3>  
-        <p>Performing as <strong>Tulsa Flood</strong>, Kevin is the frontman for Rhythm Affair. His musical journey was refined by a three-year mentorship as the personal assistant to the late <strong>Joe Jackson</strong>, providing him a masterclass in global excellence and the discipline required to maintain it.</p>
-
-        <div class="contact-box">  
-            <h3>Engage the Intervention</h3>  
-            <p>The chaos won’t fix itself. If your managers are babysitting instead of leading, you are paying a tax on your own inaction. Kevin Deon Norton is the intervention.</p>  
-            <p><strong>Contact:</strong> <a href="https://brubakerqualitycontrol.com/contact-employee-training-services-kansas-city">Request a Consultation</a></p>  
-        </div>
-
-        <div class="footer">  
-            &copy; 2026 Brubaker Quality Control. All Rights Reserved.  
-        </div>  
+    <div class="card">  
+        <h2>Tulsa Flood</h2>  
+        <p>The Stage. Psychedelic Blues/Rock frontman exploring the narrative of human influence.</p>  
+        <a href="about.html" class="btn">Explore the Music →</a>  
     </div>  
+</div>
+
+<section class="bio-section">  
+    <h2 style="color: #fff; margin-bottom: 30px;">Deep Dive into the Legacy</h2>  
+    <p style="color: #888; margin-bottom: 40px; font-size: 1.1rem;">From the Jackson Family mentorship to the U.S. Army and the streets of Milwaukee.</p>  
+    <a href="about.html" class="main-btn">Read the Official Definitive Bio</a>  
+</section>
+
+<footer>  
+    &copy; 2026 Brubaker Quality Control. All Rights Reserved.  
+</footer>
+
 </body>  
-</html>  
+</html> 
