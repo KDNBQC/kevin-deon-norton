@@ -8,80 +8,89 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">  
 <style>  
     .hero-bg {  
-        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://cdn.marblism.com/v3mv1eQT8nP.webp');  
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://cdn.marblism.com/v3mv1eQT8nP.webp');  
         background-size: cover;  
         background-position: center;  
     }  
     .nav-card {  
+        border: 1px solid rgba(255,255,255,0.1);  
         transition: all 0.3s ease;  
     }  
     .nav-card:hover {  
-        transform: translateY(-5px);  
-        background-color: #1a1a1a;  
-        color: white;  
+        background-color: rgba(255,255,255,0.05);  
+        border-color: rgba(255,255,255,0.4);  
     }  
 </style>  
 </head>  
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-black text-white font-sans">
 
 <!-- Hero Section -->  
-<header class="hero-bg h-screen flex items-center justify-center text-center text-white px-4">  
+<header class="hero-bg h-screen flex items-center justify-center text-center px-4">  
     <div class="max-w-4xl">  
-        <h1 class="text-5xl md:text-7xl font-bold mb-4">KEVIN DEON NORTON</h1>  
-        <p class="text-xl md:text-2xl tracking-widest uppercase mb-8">Consultant • Filmmaker • Musician</p>  
-        <div class="flex justify-center gap-6 text-2xl">  
-            <a href="https://www.imdb.com/name/nm3112134/" target="_blank" class="hover:text-yellow-500"><i class="fab fa-imdb"></i></a>  
-            <a href="https://www.facebook.com/TulsaFlood777/" target="_blank" class="hover:text-blue-400"><i class="fab fa-facebook"></i></a>  
-            <a href="https://brubakerqualitycontrol.com/" target="_blank" class="hover:text-blue-300"><i class="fas fa-briefcase"></i></a>  
-        </div>  
+        <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tighter uppercase">KEVIN DEON NORTON</h1>  
+        <p class="text-xl md:text-2xl tracking-widest uppercase opacity-80">Consultant • Filmmaker • Musician</p>  
     </div>  
 </header>
 
-<!-- 5-Box Navigation Grid -->  
-<section class="max-w-6xl mx-auto py-20 px-6">  
+<!-- The "In an Era" Bio Section (Restored) -->  
+<section class="max-w-4xl mx-auto py-24 px-6 text-center">  
+    <h2 class="text-3xl font-bold mb-8 uppercase tracking-[0.2em] text-gray-400">The Multi-Hyphenate</h2>  
+    <p class="text-xl md:text-2xl leading-relaxed font-light">  
+        In an era that rewards narrow lanes and tidy labels, Kevin Deon Norton stands as something rarer and far more dangerous: a true multi-hyphenate with the track record to prove it. He diagnoses what is broken in systems, stories, and people, then forces the truth into the room whether the room is ready for it or not.  
+    </p>  
+    <div class="mt-8 w-20 h-1 bg-white mx-auto opacity-20"></div>  
+</section>
+
+<!-- 5-Box Navigation Grid (Black Theme) -->  
+<section class="max-w-7xl mx-auto pb-32 px-6">  
     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">  
           
         <!-- Consultant -->  
-        <a href="https://brubakerqualitycontrol.com/" target="_blank" class="nav-card bg-white p-8 border border-gray-200 text-center flex flex-col justify-center h-64">  
-            <i class="fas fa-chart-line text-3xl mb-4"></i>  
-            <h3 class="text-xl font-bold uppercase">Consultant</h3>  
-            <p class="text-sm mt-2 text-gray-500">Brubaker Quality Control</p>  
+        <a href="https://brubakerqualitycontrol.com/" target="_blank" class="nav-card p-8 text-center h-72 flex flex-col justify-center">  
+            <i class="fas fa-chart-line text-3xl mb-4 opacity-50"></i>  
+            <h3 class="text-lg font-bold uppercase tracking-widest">Consultant</h3>  
+            <p class="text-xs mt-2 text-gray-500 uppercase">Brubaker Quality Control</p>  
         </a>
 
         <!-- Filmmaker -->  
-        <a href="https://www.imdb.com/name/nm3112134/" target="_blank" class="nav-card bg-white p-8 border border-gray-200 text-center flex flex-col justify-center h-64">  
-            <i class="fas fa-film text-3xl mb-4"></i>  
-            <h3 class="text-xl font-bold uppercase">Filmmaker</h3>  
-            <p class="text-sm mt-2 text-gray-500">Kevin Deon</p>  
+        <a href="https://www.imdb.com/name/nm3112134/" target="_blank" class="nav-card p-8 text-center h-72 flex flex-col justify-center">  
+            <i class="fas fa-film text-3xl mb-4 opacity-50"></i>  
+            <h3 class="text-lg font-bold uppercase tracking-widest">Filmmaker</h3>  
+            <p class="text-xs mt-2 text-gray-500 uppercase">Kevin Deon</p>  
         </a>
 
         <!-- Musician -->  
-        <a href="https://www.facebook.com/TulsaFlood777/" target="_blank" class="nav-card bg-white p-8 border border-gray-200 text-center flex flex-col justify-center h-64">  
-            <i class="fas fa-guitar text-3xl mb-4"></i>  
-            <h3 class="text-xl font-bold uppercase">Musician</h3>  
-            <p class="text-sm mt-2 text-gray-500">Tulsa Flood</p>  
+        <a href="https://www.facebook.com/TulsaFlood777/" target="_blank" class="nav-card p-8 text-center h-72 flex flex-col justify-center">  
+            <i class="fas fa-guitar text-3xl mb-4 opacity-50"></i>  
+            <h3 class="text-lg font-bold uppercase tracking-widest">Musician</h3>  
+            <p class="text-xs mt-2 text-gray-500 uppercase">Tulsa Flood</p>  
         </a>
 
         <!-- Full Story -->  
-        <a href="about.html" class="nav-card bg-white p-8 border border-gray-200 text-center flex flex-col justify-center h-64">  
-            <i class="fas fa-book-open text-3xl mb-4"></i>  
-            <h3 class="text-xl font-bold uppercase">Full Story</h3>  
-            <p class="text-sm mt-2 text-gray-500">The Multi-Hyphenate Bio</p>  
+        <a href="about.html" class="nav-card p-8 text-center h-72 flex flex-col justify-center">  
+            <i class="fas fa-book-open text-3xl mb-4 opacity-50"></i>  
+            <h3 class="text-lg font-bold uppercase tracking-widest">Full Story</h3>  
+            <p class="text-xs mt-2 text-gray-500 uppercase">The Official Bio</p>  
         </a>
 
         <!-- Gallery -->  
-        <a href="#" class="nav-card bg-white p-8 border border-gray-200 text-center flex flex-col justify-center h-64">  
-            <i class="fas fa-images text-3xl mb-4"></i>  
-            <h3 class="text-xl font-bold uppercase">Gallery</h3>  
-            <p class="text-sm mt-2 text-gray-500">Visual Portfolio</p>  
+        <a href="gallery.html" class="nav-card p-8 text-center h-72 flex flex-col justify-center">  
+            <i class="fas fa-images text-3xl mb-4 opacity-50"></i>  
+            <h3 class="text-lg font-bold uppercase tracking-widest">Gallery</h3>  
+            <p class="text-xs mt-2 text-gray-500 uppercase">Visual Portfolio</p>  
         </a>
 
     </div>  
 </section>
 
 <!-- Footer -->  
-<footer class="bg-white py-10 border-t border-gray-200 text-center">  
-    <p class="text-gray-400 text-sm">© 2026 Kevin Deon Norton | Brubaker Quality Control</p>  
+<footer class="py-16 border-t border-white/10 text-center">  
+    <div class="flex justify-center gap-8 mb-6 text-2xl">  
+        <a href="https://www.imdb.com/name/nm3112134/" target="_blank" class="hover:text-yellow-500 transition"><i class="fab fa-imdb"></i></a>  
+        <a href="https://www.facebook.com/TulsaFlood777/" target="_blank" class="hover:text-blue-500 transition"><i class="fab fa-facebook"></i></a>  
+        <a href="https://brubakerqualitycontrol.com/" target="_blank" class="hover:text-gray-400 transition"><i class="fas fa-briefcase"></i></a>  
+    </div>  
+    <p class="text-gray-600 text-xs tracking-[0.3em] uppercase">© 2026 Kevin Deon Norton</p>  
 </footer>
 
 </body>  
