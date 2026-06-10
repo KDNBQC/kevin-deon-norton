@@ -1,159 +1,149 @@
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
-<meta charset="UTF-8">  
-<meta name="viewport" content="width=device-width, initial-scale=1.0">  
-<title>Kevin Deon Norton | The Multi-Hyphenate</title>  
-<style>  
-body {  
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-    background-color: #1a1a1a;  
-    color: #f4f4f4;  
-    margin: 0;  
-    display: flex;  
-    flex-direction: column;  
-    align-items: center;  
-    min-height: 100vh;  
-    padding: 40px 20px;  
-}  
-.container {  
-    max-width: 850px;  
-    text-align: center;  
-}  
-h1 {  
-    font-size: 3.5rem;  
-    margin-bottom: 5px;  
-    letter-spacing: 3px;  
-    text-transform: uppercase;  
-    color: #fff;  
-}  
-.tagline {  
-    font-style: italic;  
-    color: #cca43b;  
-    font-size: 1.3rem;  
-    margin-bottom: 40px;  
-    letter-spacing: 1px;  
-}
-
-/* THE ORIGINAL STRUCTURED BIO */  
-.intro-text {  
-    font-size: 1.15rem;  
-    line-height: 1.7;  
-    margin-bottom: 40px;  
-    color: #ddd;  
-}  
-.bio-grid {  
-    display: flex;  
-    flex-direction: column;  
-    gap: 30px;  
-    text-align: left;  
-    margin-bottom: 60px;  
-}  
-.bio-pillar h3 {  
-    color: #cca43b;  
-    margin: 0 0 10px 0;  
-    text-transform: uppercase;  
-    font-size: 1.1rem;  
-    letter-spacing: 1.5px;  
-    border-bottom: 1px solid #333;  
-    padding-bottom: 5px;  
-}  
-.bio-pillar p {  
-    margin: 0;  
-    color: #bbb;  
-    font-size: 1.05rem;  
-}
-
-/* THE GRID BOXES */  
-.grid {  
-    display: grid;  
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));  
-    gap: 15px;  
-    width: 100%;  
-}  
-.card {  
-    background-color: #222;  
-    padding: 20px;  
-    border-radius: 8px;  
-    text-decoration: none;  
-    color: white;  
-    transition: all 0.3s ease;  
-    border: 1px solid #333;  
-    display: flex;  
-    flex-direction: column;  
-    justify-content: center;  
-    height: 100px;  
-}  
-.card:hover {  
-    transform: translateY(-5px);  
-    background-color: #cca43b;  
-    color: #1a1a1a;  
-    border-color: #cca43b;  
-}  
-.card h2 {  
-    margin: 0;  
-    font-size: 1.1rem;  
-}  
-.card p {  
-    font-size: 0.8rem;  
-    margin-top: 5px;  
-    opacity: 0.8;  
-}  
-.special-card {  
-    border: 1px solid #cca43b;  
-}  
-</style>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Kevin Deon Norton | The Multi-Hyphenate</title>  
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">  
+    <style>  
+        :root {  
+            --bg: #0a0a0a;  
+            --text: #ffffff;  
+            --accent: #d4af37; /* Gold accent for high-end feel */  
+            --gray: #888;  
+        }  
+        body {  
+            background-color: var(--bg);  
+            color: var(--text);  
+            font-family: 'Inter', sans-serif;  
+            line-height: 1.6;  
+            margin: 0;  
+            padding: 0;  
+            display: flex;  
+            flex-direction: column;  
+            align-items: center;  
+        }  
+        header {  
+            text-align: center;  
+            padding: 80px 20px;  
+            max-width: 900px;  
+        }  
+        h1 {  
+            font-size: 3rem;  
+            letter-spacing: -1px;  
+            margin-bottom: 10px;  
+            text-transform: uppercase;  
+        }  
+        .subtitle {  
+            color: var(--accent);  
+            font-size: 1.2rem;  
+            letter-spacing: 2px;  
+            text-transform: uppercase;  
+            font-weight: 300;  
+        }  
+        .content-section {  
+            max-width: 800px;  
+            padding: 40px 20px;  
+        }  
+        h2 {  
+            font-size: 2rem;  
+            border-bottom: 1px solid #333;  
+            padding-bottom: 10px;  
+            margin-top: 50px;  
+            color: var(--accent);  
+        }  
+        p {  
+            font-size: 1.1rem;  
+            color: #ccc;  
+            margin-bottom: 20px;  
+        }  
+        .highlight {  
+            color: var(--text);  
+            font-weight: 700;  
+        }  
+        /* Grid Layout */  
+        .grid-container {  
+            display: grid;  
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+            gap: 20px;  
+            width: 100%;  
+            max-width: 1100px;  
+            padding: 60px 20px;  
+        }  
+        .grid-box {  
+            background: #111;  
+            border: 1px solid #222;  
+            padding: 40px 20px;  
+            text-align: center;  
+            text-decoration: none;  
+            color: var(--text);  
+            transition: all 0.3s ease;  
+            display: flex;  
+            flex-direction: column;  
+            justify-content: center;  
+        }  
+        .grid-box:hover {  
+            background: var(--accent);  
+            color: #000;  
+            transform: translateY(-5px);  
+        }  
+        .grid-box h3 {  
+            margin: 0;  
+            font-size: 1.2rem;  
+            text-transform: uppercase;  
+            letter-spacing: 1px;  
+        }  
+        footer {  
+            padding: 40px;  
+            color: var(--gray);  
+            font-size: 0.8rem;  
+            text-transform: uppercase;  
+        }  
+        a { color: var(--accent); text-decoration: none; }  
+    </style>  
 </head>  
 <body>
 
-<div class="container">  
-<h1>Kevin Deon Norton</h1>  
-<div class="tagline">Entrepreneur. Entertainer. Motivational Speaker. Management Consultant.</div>
+    <header>  
+        <h1>Kevin Deon Norton</h1>  
+        <div class="subtitle">Consultant | Filmmaker | Musician</div>  
+    </header>
 
-<div class="intro-text">  
-    In an era of hyper-specialization, Kevin Deon Norton is the living refutation of the myth that you can only master one thing. Whether he is directing a film, composing a blues anthem, or diagnosing a corporate profit leak, he understands that the fundamental currency is always the same: <strong>Human Capital.</strong>  
-</div>
+    <div class="content-section">  
+        <p>In an era that rewards narrow lanes, Kevin Deon Norton stands as a true multi-hyphenate. He doesn't just dabble; he builds, leads, and diagnoses the truth in systems and people. Whether in the boardroom, on set, or on stage, his instinct is the same: eliminate the noise and amplify the signal.</p>
 
-<div class="bio-grid">  
-    <div class="bio-pillar">  
-        <h3>The Director’s Eye</h3>  
-        <p>Known as <strong>Kevin Deon</strong> in the film world, he is a prolific director and actor who brings cinematic discipline to organizational chaos. He founded the LVFTA to mentor artists in authentic psychological truth.</p>  
-    </div>  
-      
-    <div class="bio-pillar">  
-        <h3>The Lyricist’s Soul</h3>  
-        <p>As <strong>Tulsa Flood</strong>, the gravel-voiced frontman of Rhythm Affair, he weaves psychedelic blues into raw narrative tapestries—using the rhythm of humanity to build trust and influence.</p>  
+        <h2>The Consultant’s Precision: Brubaker Quality Control</h2>  
+        <p>At the core of his professional life is <span class="highlight">Brubaker Quality Control (BQC)</span>. Kevin identifies the "Babysitting Tax"—the high cost of paying managers to supervise instead of lead. Having worked with giants like <span class="highlight">Costco and 3M</span>, he targets the "Internal Blindness" that allows mediocrity to drain profits. He doesn’t offer DIY guides; he offers high-level intervention for companies with over six employees striving for perfection.</p>
+
+        <h2>The Director’s Eye: Kevin Deon</h2>  
+        <p>In the cinematic world, he is <span class="highlight">Kevin Deon</span>. An award-winning director and actor with <span class="highlight">MGM credits</span>, he founded the Las Vegas Film and Television Artists (LVFTA), growing it to over 800 members. Trained in the Stanislavski and Meisner methods, his "Director’s Eye" allows him to read human behavior with a precision that translates directly from the film set to corporate strategy.</p>
+
+        <h2>The Lyricist’s Soul: Tulsa Flood</h2>  
+        <p>Performing as <span class="highlight">Tulsa Flood</span>, he is the frontman for Rhythm Affair. His music is a "precious artifact" of psychedelic blues and rock. Shaped by a three-year mentorship as personal assistant to the late <span class="highlight">Joe Jackson</span> and professional experience with <span class="highlight">Prince</span>, his artistry is rooted in the same discipline and search for authentic truth found in his consulting work.</p>  
     </div>
 
-    <div class="bio-pillar">  
-        <h3>The HR Architect</h3>  
-        <p>Through <strong>Brubaker Quality Control</strong>, Kevin identifies the "Internal Blindness" and "Babysitting Tax" that bleeds companies dry, providing the direct intervention required to reclaim potential.</p>  
-    </div>  
-</div>
+    <!-- 5 BOX NAVIGATION GRID -->  
+    <div class="grid-container">  
+        <a href="https://brubakerqualitycontrol.com/" class="grid-box">  
+            <h3>Consultant</h3>  
+        </a>  
+        <a href="https://www.imdb.com/name/nm2345471/" class="grid-box">  
+            <h3>Filmmaker</h3>  
+        </a>  
+        <a href="https://www.facebook.com/tulsaflood" class="grid-box">  
+            <h3>Musician</h3>  
+        </a>  
+        <a href="about.html" class="grid-box">  
+            <h3>Full Story</h3>  
+        </a>  
+        <a href="images.html" class="grid-box">  
+            <h3>Gallery</h3>  
+        </a>  
+    </div>
 
-<div class="grid">  
-    <a href="https://brubakerqualitycontrol.com/" class="card" target="_blank">  
-        <h2>Consulting</h2>  
-        <p>Brubaker Quality Control</p>  
-    </a>  
-    <a href="https://www.imdb.com/name/nm6087520/" class="card" target="_blank">  
-        <h2>Filmmaker</h2>  
-        <p>IMDb Profile</p>  
-    </a>  
-    <a href="https://theplanetsinger.com/tulsa-flood-the-captivating-sound-of-the-blues/" class="card" target="_blank">  
-        <h2>Musician</h2>  
-        <p>Tulsa Flood Reviews</p>  
-    </a>  
-    <a href="about.html" class="card special-card">  
-        <h2>The Full Story</h2>  
-        <p>Official Bio</p>  
-    </a>  
-    <a href="images.html" class="card special-card">  
-        <h2>The Visuals</h2>  
-        <p>Photo Gallery</p>  
-    </a>  
-</div>  
-</div>
+    <footer>  
+        &copy; 2026 Kevin Deon Norton | Brubaker Quality Control  
+    </footer>
 
 </body>  
 </html>  
