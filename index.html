@@ -3,98 +3,171 @@
 <head>  
 <meta charset="UTF-8">  
 <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-<title>Kevin Deon Norton | Brubaker Quality Control</title>  
-<script src="https://cdn.tailwindcss.com"></script>  
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">  
+<title>Kevin Deon Norton | The Multi-Hyphenate</title>  
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">  
 <style>  
-    .hero-bg {  
-        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://cdn.marblism.com/GF75gb5Pp5J.webp');  
-        background-size: cover;  
-        background-position: center;  
-    }  
-    .nav-card {  
-        border: 1px solid rgba(255,255,255,0.1);  
-        transition: all 0.3s ease;  
-    }  
-    .nav-card:hover {  
-        background-color: rgba(255,255,255,0.05);  
-        border-color: rgba(255,255,255,0.4);  
-    }  
+:root {  
+    --bg: #0a0a0a;  
+    --text: #ffffff;  
+    --accent: #d4af37;  
+    --gray: #888;  
+}  
+body {  
+    background-color: var(--bg);  
+    color: var(--text);  
+    font-family: 'Inter', sans-serif;  
+    line-height: 1.8;  
+    margin: 0;  
+    padding: 0;  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+}  
+header {  
+    text-align: center;  
+    padding: 100px 20px 40px 20px;  
+    max-width: 900px;  
+}  
+h1 {  
+    font-size: 3.5rem;  
+    letter-spacing: -2px;  
+    margin-bottom: 10px;  
+    text-transform: uppercase;  
+    font-weight: 700;  
+}  
+.subtitle {  
+    color: var(--accent);  
+    font-size: 1.2rem;  
+    letter-spacing: 4px;  
+    text-transform: uppercase;  
+    font-weight: 300;  
+    margin-bottom: 40px;  
+}  
+.main-image {  
+    width: 100%;  
+    max-width: 600px; /* Adjusted for portrait orientation */  
+    height: auto;  
+    border-radius: 4px;  
+    margin-bottom: 60px;  
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);  
+}  
+.content-section {  
+    max-width: 800px;  
+    padding: 0 20px;  
+}  
+h2 {  
+    font-size: 2.2rem;  
+    margin-top: 60px;  
+    margin-bottom: 20px;  
+    color: var(--accent);  
+    text-transform: uppercase;  
+    letter-spacing: 1px;  
+}  
+p {  
+    font-size: 1.15rem;  
+    color: #e0e0e0;  
+    margin-bottom: 25px;  
+}  
+.highlight {  
+    color: var(--text);  
+    font-weight: 700;  
+}  
+strong {  
+    color: var(--accent);  
+}  
+/* Grid Layout for the 5 Boxes */  
+.grid-container {  
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));  
+    gap: 15px;  
+    width: 100%;  
+    max-width: 1100px;  
+    padding: 100px 20px;  
+}  
+.grid-box {  
+    background: #111;  
+    border: 1px solid #222;  
+    padding: 50px 20px;  
+    text-align: center;  
+    text-decoration: none;  
+    color: var(--text);  
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+}  
+.grid-box:hover {  
+    background: var(--accent);  
+    color: #000;  
+    transform: scale(1.02);  
+    border-color: var(--accent);  
+}  
+.grid-box h3 {  
+    margin: 0;  
+    font-size: 1rem;  
+    text-transform: uppercase;  
+    letter-spacing: 2px;  
+}  
+footer {  
+    padding: 60px;  
+    color: var(--gray);  
+    font-size: 0.8rem;  
+    text-transform: uppercase;  
+    letter-spacing: 1px;  
+}  
+a { color: var(--accent); text-decoration: none; }  
 </style>  
 </head>  
-<body class="bg-black text-white font-sans">
+<body>
 
-<!-- Hero Section -->  
-<header class="hero-bg h-screen flex items-center justify-center text-center px-4">  
-    <div class="max-w-4xl">  
-        <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tighter uppercase">KEVIN DEON NORTON</h1>  
-        <p class="text-xl md:text-2xl tracking-widest uppercase opacity-80">Consultant • Filmmaker • Musician</p>  
-    </div>  
+<header>  
+<h1>Kevin Deon Norton</h1>  
+<div class="subtitle">The Multi-Hyphenate</div>  
+<img src="https://cdn.marblism.com/X2frY8Bhu3y.jpg" alt="Kevin Deon Norton" class="main-image">  
 </header>
 
-<!-- Approved BQC-First Bio Section -->  
-<section class="max-w-4xl mx-auto py-24 px-6 text-center">  
-    <h2 class="text-3xl font-bold mb-8 uppercase tracking-[0.2em] text-gray-400">Brubaker Quality Control</h2>  
-    <p class="text-xl md:text-2xl leading-relaxed font-light mb-10">  
-        Kevin Deon Norton is the force behind <strong>Brubaker Quality Control (BQC)</strong>, where he serves as a high-impact management consultant specializing in leadership development and business efficiency. With a track record that includes global giants like <strong>Costco</strong> and <strong>3M</strong>, Kevin identifies the "Babysitting Tax" and "Internal Blindness" that quietly bleed company profits.  
-    </p>  
-    <p class="text-lg leading-relaxed text-gray-400 mb-10">  
-        Beyond the boardroom, he is a multi-hyphenate talent known in the film industry as <strong>Kevin Deon</strong>—an award-winning director and actor with credits tied to <strong>MGM</strong> and Warner Bros—and in the music world as <strong>Tulsa Flood</strong>, mentored by the legendary <strong>Joe Jackson</strong>. His "Director’s Eye" allows him to read human behavior with precision, whether he’s fixing a broken corporate culture or directing a high-stakes scene.  
-    </p>  
-    <div class="w-20 h-1 bg-white mx-auto opacity-20"></div>  
-</section>
+<div class="content-section">  
+<p>In an era that rewards narrow lanes and tidy labels, Kevin Deon Norton stands as something rarer and far more dangerous: a true multi-hyphenate with the track record to prove it. He is not a man who dabbles. He builds. He leads. He creates. He diagnoses what is broken in systems, stories, and people, then forces the truth into the room whether the room is ready for it or not.</p>
 
-<!-- 5-Box Navigation Grid (Black Theme) -->  
-<section class="max-w-7xl mx-auto pb-32 px-6">  
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">  
-          
-        <!-- Consultant -->  
-        <a href="https://brubakerqualitycontrol.com/" target="_blank" class="nav-card p-8 text-center h-72 flex flex-col justify-center">  
-            <i class="fas fa-chart-line text-3xl mb-4 opacity-50"></i>  
-            <h3 class="text-lg font-bold uppercase tracking-widest">Consultant</h3>  
-            <p class="text-xs mt-2 text-gray-500 uppercase">Brubaker Quality Control</p>  
-        </a>
+<p>That is the thread that ties together Brubaker Quality Control, Kevin Deon, and Tulsa Flood. Different industries. Same instinct. Same standard. Same refusal to tolerate mediocrity dressed up as professionalism.</p>
 
-        <!-- Filmmaker -->  
-        <a href="https://www.imdb.com/name/nm3112134/" target="_blank" class="nav-card p-8 text-center h-72 flex flex-col justify-center">  
-            <i class="fas fa-film text-3xl mb-4 opacity-50"></i>  
-            <h3 class="text-lg font-bold uppercase tracking-widest">Filmmaker</h3>  
-            <p class="text-xs mt-2 text-gray-500 uppercase">Kevin Deon</p>  
-        </a>
+<h2>The Consultant’s Precision: Brubaker Quality Control</h2>  
+<p>At the top of the professional stack is <strong>Brubaker Quality Control</strong>, the consulting work that puts Kevin Deon Norton face-to-face with the problems most companies spend years denying. He has built his name around one brutal truth: businesses do not usually bleed out because of one catastrophic mistake. They bleed out slowly through tolerated dysfunction, weak middle management, rework, and the daily drag of underperformance.</p>
 
-        <!-- Musician -->  
-        <a href="https://www.facebook.com/TulsaFlood777/" target="_blank" class="nav-card p-8 text-center h-72 flex flex-col justify-center">  
-            <i class="fas fa-guitar text-3xl mb-4 opacity-50"></i>  
-            <h3 class="text-lg font-bold uppercase tracking-widest">Musician</h3>  
-            <p class="text-xs mt-2 text-gray-500 uppercase">Tulsa Flood</p>  
-        </a>
+<p>Kevin speaks about the <strong>Babysitting Tax</strong> because too many companies are paying managers to watch people instead of leading them. He identifies the <strong>Internal Blindness</strong> that keeps owners from seeing the cultural rot costing them money every single day. His orbit includes recognized names such as <span class="highlight">Costco and 3M</span>, where his blunt accuracy is the only thing that cuts through the noise.</p>
 
-        <!-- Full Story -->  
-        <a href="about.html" class="nav-card p-8 text-center h-72 flex flex-col justify-center">  
-            <i class="fas fa-book-open text-3xl mb-4 opacity-50"></i>  
-            <h3 class="text-lg font-bold uppercase tracking-widest">Full Story</h3>  
-            <p class="text-xs mt-2 text-gray-500 uppercase">The Official Bio</p>  
-        </a>
+<h2>The Director’s Eye: Kevin Deon</h2>  
+<p>In the film world, he is <strong>Kevin Deon</strong>. As an actor, director, writer, and producer, his credits include high-level <span class="highlight">MGM associations</span>. He founded the LVFTA in Las Vegas, building infrastructure for artists rather than just participating. His background in the Stanislavski and Meisner methods gave him disciplined exposure to truth in performance—a skill that allows him to read people and rooms with unusual precision.</p>
 
-        <!-- Gallery -->  
-        <a href="gallery.html" class="nav-card p-8 text-center h-72 flex flex-col justify-center">  
-            <i class="fas fa-images text-3xl mb-4 opacity-50"></i>  
-            <h3 class="text-lg font-bold uppercase tracking-widest">Gallery</h3>  
-            <p class="text-xs mt-2 text-gray-500 uppercase">Visual Portfolio</p>  
-        </a>
+<h2>The Lyricist’s Soul: Tulsa Flood</h2>  
+<p><strong>Tulsa Flood</strong> is where the emotional core comes through. Fronting the band Rhythm Affair, his sound is rooted in blues, rock, and narrative force. His musical pedigree includes a three-year mentorship from <strong>Joe Jackson</strong> and working in the orbit of legends like <strong>Prince</strong>. This isn't manufacture; it's authorship. It's the lyrical proof of the same force visible in his consulting: a refusal to fake depth.</p>
 
-    </div>  
-</section>
+<h2>The Chaos Won’t Fix Itself</h2>  
+<p>Kevin Deon Norton is the intervention for leaders who are tired of the "Convenient lie" and are ready to face the "Uncomfortable truth" of their operational failures. The chaos won't fix itself, and your current management team—the very people who allowed the chaos to grow—are the last people who can resolve it.</p>  
+</div>
 
-<!-- Footer -->  
-<footer class="py-16 border-t border-white/10 text-center">  
-    <div class="flex justify-center gap-8 mb-6 text-2xl">  
-        <a href="https://www.imdb.com/name/nm3112134/" target="_blank" class="hover:text-yellow-500 transition"><i class="fab fa-imdb"></i></a>  
-        <a href="https://www.facebook.com/TulsaFlood777/" target="_blank" class="hover:text-blue-500 transition"><i class="fab fa-facebook"></i></a>  
-        <a href="https://brubakerqualitycontrol.com/" target="_blank" class="hover:text-gray-400 transition"><i class="fas fa-briefcase"></i></a>  
-    </div>  
-    <p class="text-gray-600 text-xs tracking-[0.3em] uppercase">© 2026 Kevin Deon Norton</p>  
+<!-- THE 5 BOXES -->  
+<div class="grid-container">  
+<a href="https://brubakerqualitycontrol.com/" class="grid-box">  
+    <h3>Consultant</h3>  
+</a>  
+<a href="https://www.imdb.com/name/nm2345471/" class="grid-box">  
+    <h3>Filmmaker</h3>  
+</a>  
+<a href="https://www.facebook.com/tulsaflood" class="grid-box">  
+    <h3>Musician</h3>  
+</a>  
+<a href="about.html" class="grid-box">  
+    <h3>Full Story</h3>  
+</a>  
+<a href="images.html" class="grid-box">  
+    <h3>Gallery</h3>  
+</a>  
+</div>
+
+<footer>  
+&copy; 2026 Kevin Deon Norton | Brubaker Quality Control  
 </footer>
 
 </body>  
-</html>  
+</html> 
