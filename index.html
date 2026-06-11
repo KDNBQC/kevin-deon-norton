@@ -146,9 +146,20 @@ a { color: var(--accent); text-decoration: none; }
 <a href="https://www.imdb.com/name/nm3112134/" class="grid-box"><h3>Filmmaker</h3></a>  
 <a href="https://www.facebook.com/TulsaFlood777" class="grid-box"><h3>Musician</h3></a>  
 <div class="grid-box" onclick="location.href='about.html';" style="cursor: pointer; position: relative; z-index: 999; display: flex; align-items: center; justify-content: center;">  
-<h3>Full Story</h3>  
+    <h3>Full Story</h3>  
 </div>
-<a href="images.html" class="grid-box"><h3>Gallery</h3></a>  
+<!-- Gallery Grid Box -->  
+<a href="images.html" class="group border border-zinc-800 p-8 flex flex-col justify-between hover:bg-zinc-900 transition-all cursor-pointer h-full">  
+    <div>  
+        <h2 class="text-xs uppercase tracking-widest text-zinc-500">Visuals</h2>  
+    </div>  
+    <div class="mt-20">  
+        <p class="text-3xl font-black italic uppercase leading-none group-hover:tracking-widest transition-all">The<br>Gallery</p>  
+        <div class="mt-4 w-10 h-10 border border-white flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all">  
+            <span class="text-lg">→</span>  
+        </div>  
+    </div>  
+</a>  
 </div>
 
 <footer>  
