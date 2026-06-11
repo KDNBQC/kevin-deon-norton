@@ -6,77 +6,119 @@
 <title>Images | Kevin Deon Norton</title>  
 <script src="https://cdn.tailwindcss.com"></script>  
 <style>  
-    body { background-color: #000; color: #fff; font-family: 'Inter', sans-serif; }  
-    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; padding: 2rem; }  
-    .gallery-item { position: relative; overflow: hidden; border: 1px solid #333; transition: transform 0.3s ease; background: #111; }  
-    .gallery-item:hover { transform: scale(1.02); border-color: #fff; }  
-    ..gallery-item img { width: 100%; height: 450px; object-fit: cover; transition: transform 0.3s ease; }  
-.gallery-item:hover img { transform: scale(1.05); } 
-    .caption { padding: 1.5rem; background: #000; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; line-height: 1.5; }  
+body { background-color: #000; color: #fff; font-family: 'Inter', sans-serif; }  
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; padding: 2rem; }  
+.gallery-item { position: relative; overflow: hidden; border: 1px solid #333; transition: transform 0.3s ease; background: #111; }  
+.gallery-item:hover { transform: scale(1.02); border-color: #fff; }  
+.gallery-item img { width: 100%; height: 450px; object-fit: cover; transition: transform 0.3s ease; }  
+.gallery-item:hover img { transform: scale(1.05); }  
+.caption { padding: 1.5rem; background: #000; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; line-height: 1.5; }  
 </style>  
 </head>  
 <body>
 
 <nav class="p-8 flex justify-between items-center border-b border-zinc-800">  
-    <a href="index.html" class="text-xl font-bold tracking-tighter">KEVIN DEON NORTON</a>  
-    <div class="space-x-6 text-sm uppercase tracking-widest">  
-        <a href="index.html" class="hover:text-zinc-400">Home</a>  
-        <a href="about.html" class="hover:text-zinc-400">About</a>  
-        <a href="images.html" class="text-white border-b border-white">Images</a>  
-    </div>  
+<a href="index.html" class="text-xl font-bold tracking-tighter">KEVIN DEON NORTON</a>  
+<div class="space-x-6 text-sm uppercase tracking-widest">  
+    <a href="index.html" class="hover:text-zinc-400">Home</a>  
+    <a href="about.html" class="hover:text-zinc-400">About</a>  
+    <a href="images.html" class="text-white border-b border-white">Images</a>  
+</div>  
 </nav>
 
 <header class="py-16 text-center">  
-    <h1 class="text-5xl font-black uppercase tracking-tighter italic">The Visuals</h1>  
-    <p class="mt-4 text-zinc-500 uppercase tracking-widest text-xs">BQC Consultant • Filmmaker • Tulsa Flood</p>  
+<h1 class="text-5xl font-black uppercase tracking-tighter italic">The Visuals</h1>  
+<p class="mt-4 text-zinc-500 uppercase tracking-widest text-xs">BQC Consultant • Filmmaker • Tulsa Flood</p>  
 </header>
 
 <div class="gallery-grid">  
-    <!-- Row 1 -->  
-    <div class="gallery-item">  
-        <img src="KDN%20KDN.jpg" alt="Kevin Deon Norton">  
-        <div class="caption">The Founder</div>  
-    </div>  
-    <div class="gallery-item">  
-        <img src="Kev%20speaking%20at%20BOG%20meeting%20kc%202026.jpg" alt="BQC Leadership">  
-        <div class="caption">BQC: Leadership in Action (2026)</div>  
-    </div>  
-    <div class="gallery-item">  
-        <img src="KDN%20Tulsa%20Flood%20and%20Joe%20Jackson.jpg" alt="Tulsa Flood and Joe Jackson">  
-        <div class="caption">Tulsa Flood & Joe Jackson</div>  
-    </div>
+<!-- Row 1: The Foundations -->  
+<div class="gallery-item">  
+    <img src="KDN%20KDN.jpg" alt="Kevin Deon Norton">  
+    <div class="caption">The Founder</div>  
+</div>  
+<div class="gallery-item">  
+    <img src="Kev%20speaking%20at%20BOG%20meeting%20kc%202026.jpg" alt="Leadership">  
+    <div class="caption">BQC: Leadership in Action</div>  
+</div>  
+<div class="gallery-item">  
+    <img src="KDN%20%20zoomed%20in%20from%20meeting%20wide%20shot.jpg" alt="Consulting">  
+    <div class="caption">BQC: Strategic Oversight</div>  
+</div>
 
-    <!-- Row 2 -->  
-    <div class="gallery-item">  
-        <img src="Tulsa%20Flood%20and%20John%20Mayall.jpeg" alt="John Mayall">  
-        <div class="caption">With the Legend John Mayall</div>  
-    </div>  
-    <div class="gallery-item">  
-        <img src="kaideon%20adobe.webp" alt="Creative Projects">  
-        <div class="caption">Creative Direction</div>  
-    </div>  
-    <div class="gallery-item">  
-        <img src="a-list%20las%20vegas%202012%20(1).jpg" alt="Las Vegas 2012">  
-        <div class="caption">A-List Las Vegas (2012)</div>  
-    </div>
+<!-- Row 2: Music & Roots -->  
+<div class="gallery-item">  
+    <img src="KDN%20Tulsa%20Flood%20and%20Joe%20Jackson.jpg" alt="Joe Jackson">  
+    <div class="caption">Tulsa Flood & Joe Jackson</div>  
+</div>  
+<div class="gallery-item">  
+    <img src="Tulsa%20Flood%20and%20John%20Mayall.jpeg" alt="John Mayall">  
+    <div class="caption">With John Mayall</div>  
+</div>  
+<div class="gallery-item">  
+    <img src="Tulsa%20flood%20live%202020%20(1).png" alt="Live Music">  
+    <div class="caption">Tulsa Flood Live</div>  
+</div>
 
-    <!-- Row 3 -->  
-    <div class="gallery-item">  
-        <img src="Tulsa%20flood%20live%202020%20(1).png" alt="Live Music">  
-        <div class="caption">Tulsa Flood: Live 2020</div>  
-    </div>  
-    <div class="gallery-item">  
-        <img src="Kevin%20Deon%20teaching%20%20class%202011ISH.png" alt="Teaching">  
-        <div class="caption">Management Coaching Archive</div>  
-    </div>  
-    <div class="gallery-item">  
-        <img src="2011.jpg" alt="2011 Project">  
-        <div class="caption">Project: 2011</div>  
-    </div>  
+<!-- Row 3: History & Archive -->  
+<div class="gallery-item">  
+    <img src="a-list%20las%20vegas%202012%20(1).jpg" alt="Vegas 2012">  
+    <div class="caption">A-List Las Vegas</div>  
+</div>  
+<div class="gallery-item">  
+    <img src="Kevin%20Deon%20teaching%20%20class%202011ISH.png" alt="Teaching">  
+    <div class="caption">Management Coaching Archive</div>  
+</div>  
+<div class="gallery-item">  
+    <img src="2011.jpg" alt="2011">  
+    <div class="caption">Kevin Deon (2011)</div>  
+</div>
+
+<!-- Row 4: Fashion & Model Work -->  
+<div class="gallery-item">  
+    <img src="kaideon%20pics%20n%20model%20stuff%20(11).jpg" alt="Model Work">  
+    <div class="caption">Studio Session</div>  
+</div>  
+<div class="gallery-item">  
+    <img src="kaideon%20pics%20n%20model%20stuff%20(13).jpg" alt="Fashion">  
+    <div class="caption">Editorial Study</div>  
+</div>  
+<div class="gallery-item">  
+    <img src="kaideon%20pics%20n%20model%20stuff%20(1).jpeg" alt="Creative">  
+    <div class="caption">Creative Portfolio</div>  
+</div>
+
+<!-- Row 5: Band & Performance -->  
+<div class="gallery-item">  
+    <img src="Tulsa%20Flood%20and%20Rhyhm%20Affair%20(2).jpeg" alt="Rhythm Affair">  
+    <div class="caption">Tulsa Flood & Rhythm Affair</div>  
+</div>  
+<div class="gallery-item">  
+    <img src="Tulsa%20Flood%20and%20Rhyhm%20Affair%20Fremont%20street%202024.jpeg" alt="Fremont Street">  
+    <div class="caption">Fremont Street Live (2024)</div>  
+</div>  
+<div class="gallery-item">  
+    <img src="first%20line%20up%202018%20(1).jpg" alt="Original Lineup">  
+    <div class="caption">Tulsa Flood: Original Lineup (2018)</div>  
+</div>
+
+<!-- Row 6: Personal & Family -->  
+<div class="gallery-item">  
+    <img src="christians%20graduation.jpg" alt="Graduation">  
+    <div class="caption">Family Milestones</div>  
+</div>  
+<div class="gallery-item">  
+    <img src="kaideon%20adobe.webp" alt="Creative Direction">  
+    <div class="caption">Digital Creative</div>  
+</div>  
+<div class="gallery-item">  
+    <img src="kaideon%20pics%20n%20model%20stuff%20(7).jpg" alt="Headshot">  
+    <div class="caption">Portrait Study</div>  
+</div>  
 </div>
 
 <footer class="py-20 text-center border-t border-zinc-900">  
-    <p class="text-zinc-600 text-xs tracking-widest uppercase">&copy; 2026 BRUBAKER QUALITY CONTROL</p>  
+<p class="text-zinc-600 text-xs tracking-widest uppercase">&copy; 2026 BRUBAKER QUALITY CONTROL</p>  
 </footer>
 
 </body>  
